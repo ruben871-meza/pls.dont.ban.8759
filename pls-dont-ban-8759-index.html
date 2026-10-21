@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10121c">
+<title>pls.dont.ban.8759 — Game Zone</title>
+<style>
+  :root {
+    --bg:#10121c; --panel:#1b2033; --panel2:#242b42;
+    --text:#f5f7ff; --muted:#b8c1d9; --accent:#70a5ff; --accent2:#9a7bff;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; color:var(--text); background:
+      radial-gradient(ellipse at top left, #24244b 0, transparent 40%),
+      var(--bg); font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+  }
+  header { padding:34px 18px 26px; text-align:center; background:#111522cc; border-bottom:1px solid #343b58; }
+  .logo { font-size:clamp(1.7rem,5vw,3rem); margin:0; letter-spacing:-1px; }
+  .logo span { color:var(--accent); }
+  header p { color:var(--muted); margin:10px auto 0; max-width:620px; }
+  main { max-width:1120px; margin:auto; padding:22px 16px 50px; }
+  .tools { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:18px; }
+  input, select {
+    color:var(--text); background:var(--panel); border:1px solid #414967;
+    border-radius:10px; padding:12px 14px; font:inherit;
+  }
+  input { flex:1; min-width:210px; }
+  select { min-width:160px; }
+  .notice { color:var(--muted); font-size:.9rem; margin:0 0 22px; }
+  .section-title { display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin:22px 0 13px; }
+  h2 { font-size:1.2rem; margin:0; }
+  #count { color:var(--muted); font-size:.9rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(225px,1fr)); gap:14px; }
+  .card {
+    display:flex; flex-direction:column; min-height:205px; padding:17px;
+    background:linear-gradient(150deg,var(--panel2),var(--panel));
+    border:1px solid #343c59; border-radius:16px; box-shadow:0 8px 24px #0002;
+  }
+  .icon { font-size:2rem; margin-bottom:7px; }
+  .card h3 { margin:0 0 7px; font-size:1.08rem; }
+  .card p { color:var(--muted); margin:0 0 15px; line-height:1.45; font-size:.92rem; flex:1; }
+  .tag { color:#c5d6ff; font-size:.78rem; margin-bottom:10px; }
+  .btn {
+    display:inline-block; text-align:center; text-decoration:none; font-weight:700;
+    color:#101522; background:var(--accent); border-radius:9px; padding:10px 12px;
+  }
+  .btn:hover { filter:brightness(1.08); }
+  .btn.secondary { background:#d8d0ff; }
+  .empty { display:none; padding:28px; text-align:center; color:var(--muted); background:var(--panel); border-radius:12px; }
+  footer { text-align:center; color:var(--muted); border-top:1px solid #303750; padding:24px 15px; font-size:.88rem; }
+  a:focus-visible,input:focus-visible,select:focus-visible { outline:3px solid #fff; outline-offset:3px; }
+</style>
+</head>
+<body>
+<header>
+  <h1 class="logo">🎮 <span>pls.dont.ban.8759</span></h1>
+  <p>Your game corner: browse sports, racing, platform, puzzle, and arcade games.</p>
+</header>
+<main>
+  <div class="tools">
+    <input id="search" type="search" placeholder="Search games..." aria-label="Search games">
+    <select id="category" aria-label="Filter by category">
+      <option value="all">All categories</option>
+      <option value="Sports">Sports</option>
+      <option value="Training & Racing">Training & Racing</option>
+      <option value="Arcade">Arcade</option>
+      <option value="Puzzle">Puzzle</option>
+      <option value="Platformer">Platformer</option>
+      <option value="Game Libraries">Game Libraries</option>
+    </select>
+  </div>
+  <p class="notice">Choose a card to open the game's page. Some games open on another website, and availability depends on that site.</p>
+  <div class="section-title"><h2>Game shelf</h2><span id="count"></span></div>
+  <section class="grid" id="games">
+    <article class="card" data-category="Sports" data-search="retro bowl football sports team">
+      <div class="icon">🏈</div><div class="tag">SPORTS</div><h3>Retro Bowl</h3>
+      <p>Retro-style American football and team management.</p>
+      <a class="btn" href="https://www.newstargames.com/" target="_blank" rel="noopener noreferrer">Visit publisher</a>
+    </article>
+    <article class="card" data-category="Training & Racing" data-search="duck life train duck racing">
+      <div class="icon">🦆</div><div class="tag">TRAINING & RACING</div><h3>Duck Life</h3>
+      <p>Train a duck's skills and take on races.</p>
+      <a class="btn" href="https://ducklife.app/games" target="_blank" rel="noopener noreferrer">Explore Duck Life games</a>
+    </article>
+    <article class="card" data-category="Arcade" data-search="crazy games arcade action racing puzzle">
+      <div class="icon">🕹️</div><div class="tag">ARCADE</div><h3>Arcade Games</h3>
+      <p>Explore a large collection of browser games in different genres.</p>
+      <a class="btn" href="https://www.crazygames.com/" target="_blank" rel="noopener noreferrer">Browse games</a>
+    </article>
+    <article class="card" data-category="Puzzle" data-search="puzzle logic brain games">
+      <div class="icon">🧩</div><div class="tag">PUZZLE</div><h3>Puzzle Games</h3>
+      <p>Find logic, matching, and brain-teaser games.</p>
+      <a class="btn" href="https://www.coolmathgames.com/" target="_blank" rel="noopener noreferrer">Browse puzzles</a>
+    </article>
+    <article class="card" data-category="Platformer" data-search="itch io platformer indie games">
+      <div class="icon">🧱</div><div class="tag">PLATFORMER</div><h3>Indie Platformers</h3>
+      <p>Discover independent games, including platformers and experiments.</p>
+      <a class="btn" href="https://itch.io/games/tag-platformer" target="_blank" rel="noopener noreferrer">Explore platformers</a>
+    </article>
+    <article class="card" data-category="Sports" data-search="sports basketball soccer baseball games">
+      <div class="icon">🏆</div><div class="tag">SPORTS</div><h3>More Sports Games</h3>
+      <p>Browse sports games and find a new favorite.</p>
+      <a class="btn" href="https://www.crazygames.com/t/sports" target="_blank" rel="noopener noreferrer">Browse sports</a>
+    </article>
+    <article class="card" data-category="Training & Racing" data-search="racing driving cars games">
+      <div class="icon">🏎️</div><div class="tag">RACING</div><h3>Racing Games</h3>
+      <p>Try driving, drifting, and racing challenges.</p>
+      <a class="btn" href="https://www.crazygames.com/t/racing" target="_blank" rel="noopener noreferrer">Browse racing</a>
+    </article>
+    <article class="card" data-category="Game Libraries" data-search="itch io free browser games collection">
+      <div class="icon">🌟</div><div class="tag">GAME LIBRARY</div><h3>Indie Game Library</h3>
+      <p>Find free browser-playable projects from independent creators.</p>
+      <a class="btn secondary" href="https://itch.io/games/free/html5" target="_blank" rel="noopener noreferrer">Browse HTML5 games</a>
+    </article>
+    <article class="card" data-category="Arcade" data-search="poki online games arcade">
+      <div class="icon">🎯</div><div class="tag">ARCADE</div><h3>More Browser Games</h3>
+      <p>Explore a broad collection of quick games to play in your browser.</p>
+      <a class="btn" href="https://poki.com/" target="_blank" rel="noopener noreferrer">Browse Poki</a>
+    </article>
+  </section>
+  <div class="empty" id="empty">No games match that search. Try another word or category.</div>
+</main>
+<footer>
+  <p>Fan-made game directory. Game names and trademarks belong to their respective owners.</p>
+  <p>External websites have their own rules, content, and availability.</p>
+</footer>
+<script>
+  const search = document.getElementById('search');
+  const category = document.getElementById('category');
+  const cards = [...document.querySelectorAll('.card')];
+  const count = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  function filterGames() {
+    const term = search.value.trim().toLowerCase();
+    const cat = category.value;
+    let visible = 0;
+    cards.forEach(card => {
+      const matchesText = (card.innerText + ' ' + card.dataset.search).toLowerCase().includes(term);
+      const matchesCategory = cat === 'all' || card.dataset.category === cat;
+      const show = matchesText && matchesCategory;
+      card.style.display = show ? 'flex' : 'none';
+      if (show) visible++;
+    });
+    count.textContent = `${visible} game links`;
+    empty.style.display = visible ? 'none' : 'block';
+  }
+  search.addEventListener('input', filterGames);
+  category.addEventListener('change', filterGames);
+  filterGames();
+</script>
+</body>
+</html>
